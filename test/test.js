@@ -1,5 +1,5 @@
-/*
-var coinMath = require('./index.js');
+
+var coinMath = require('../index.js');
 
 exports.test = function() {
     var fee = 0.02;
@@ -24,21 +24,8 @@ exports.test = function() {
     x.forEach(function(v) {
         var fixed = coinMath.floatToFixed(v, true, true);
         var float = coinMath.fixedToFloat(fixed);
-        var feed = coinMath.applyFee(fixed, fee);
-        console.log(v + ' =fixed=> ' + fixed + ' =float=> ' +
-            float + ' =fee=> ' + feed + ' =real=> ' + coinMath.fixedToFloat(feed));
+        console.log(v + ' =fixed=> ' + fixed + ' =float=> ' + float);
     });
 };
 
 exports.test();
-*/
-
-var coinMath = require('../index.js');
-
-var amount = 1.23456789;
-
-var satoshi = coinMath.floatToFixed(amount, true, true);
-
-var amount2 = coinMath.fixedToFloat(satoshi);
-
-console.log('amount(%d) satoshi(%d) amount2(%d)', amount, satoshi, amount2);
