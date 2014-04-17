@@ -1,0 +1,27 @@
+{
+  "name": "coin-math",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./index.js",
+  "keywords": [
+    "bitcoin",
+    "litecoin",
+    "coin",
+    "coins",
+    "math",
+    "satoshi",
+    "cryptocurrency",
+    "crypto-currency"
+  ],
+  "dependencies" : {
+  },
+  "devDependencies": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ypocat/coin-math.git"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  }
+}
